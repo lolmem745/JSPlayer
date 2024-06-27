@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расширенный видеоплеер</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-player">
+        <video id="videoPlayer" src="assets/Ramirez_Bomba_mpeg4.mp4"></video>
+        <div class="controls">
+            <button id="playPauseBtn" class="btn">Play</button>
+            <input type="range" id="seekBar" value="0">
+            <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+            <select id="playbackSpeed">
+                <option value="0.5">0.5x</option>
+                <option value="1" selected>1x</option>
+                <option value="1.5">1.5x</option>
+                <option value="2">2x</option>
+            </select>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
